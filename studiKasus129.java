@@ -13,7 +13,9 @@ public class studiKasus129 {
         int hargaPerCup = 20000;
         int jumlahCup;
         int uangBayar;
-        int totalHarga, diskon, totalBayar;
+        int totalHarga;
+        int diskon;
+        int totalBayar;
         int kembalian,kurang;
 
         System.out.print("Masukkan jumlah cup\t: ");

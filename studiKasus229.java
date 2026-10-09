@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 import java.util.Scanner;
 
 public class studiKasus229 {
@@ -35,3 +36,5 @@ public class studiKasus229 {
         System.out.println("Status\t\t\t\t\t\t\t: "+status);
     }
 }
+=======
+>>>>>>> bf1f9ec5fbc958d5d32edc581c656b92a0b5ff39
