@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 import java.util.Scanner;
 
 public class studiKasus229 {
@@ -30,11 +29,25 @@ public class studiKasus229 {
             
         } else {
             status ="jenis kegiatan anda tidak memenuhi kriteria";
-            
+             if (jenisKegiatan.equalsIgnoreCase("pkm")) {
+                System.out.print("Status pendanaan PKM (1 = lolos, 0 = tidak)\t\t: ");
+                int pendanaan = sc.nextInt();
+                if (pendanaan ==1) {
+                   System.out.print("Jumlah dokumen yang diupload\t\t\t\t: ");
+                   int jmlDokumen = sc.nextInt();
+                   if (jmlDokumen==4) {
+                    status= "Lolos! status pendanaan dan jumlah dokumen sudah sesuai";
+                   } else {
+                    status="Dokumen tidak lengkap (kurang " +(4-jmlDokumen)+"), dana penghargaan tidak diberikan";
+                   }
+                } else {
+                 status = "Gagal! anda tidak lolos pendanaan";  
+                }
+        
+            }
          }
 
         System.out.println("Status\t\t\t\t\t\t\t: "+status);
     }
 }
-=======
->>>>>>> bf1f9ec5fbc958d5d32edc581c656b92a0b5ff39
+
